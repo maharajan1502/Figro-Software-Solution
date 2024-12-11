@@ -2,10 +2,12 @@ import React from 'react'
 
 const About = () => {
   return (
-    <>
-    <div id='aboutus' className='flex  justify-between w-auto h-auto my-28  ' > 
+    <> 
+    <h1 className='button font-bold text-2xl text-center text-blue-950 w-auto pt-4 mt-4' >About Us</h1>
+    <div id='aboutus' className='flex  justify-between w-auto h-auto my-10  ' > 
+     
       <div className='w-96  mx-40 space-y-4'>
-         <h1 className='font-extrabold text-2xl text-blue-700'>About Us</h1>
+         
          <p className='font-bold text-3xl'>We Provide Innovative IT Solutions For Your Business</p>
          <p className='font-light text-xl'>
          We are passionate about crafting cutting-edge solutions that 

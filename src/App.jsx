@@ -4,7 +4,7 @@ import About from './Components/About'
 import Services from './Components/Services'
 import Footer from './Components/Footer'
 import Rate from './Components/Rate'
-import Reachus from './Components/Reachus'
+import Join from './Components/Join'
 
 const App = () => {
   return (
@@ -13,8 +13,8 @@ const App = () => {
       <About/>
       <Rate/>
       <Services/>
+      <Join/>
       <Footer/>
-      {/* <Reachus/> */}
     </div>
   )
 }

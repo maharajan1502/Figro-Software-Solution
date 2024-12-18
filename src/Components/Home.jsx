@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Home = () => {
+  function reachus(){
+
+  }
   return (
     <div className='w-auto bg-[#CCE3DE] text- h-auto border-b-2 border-black'> 
      <nav className='flex text-black bg-[#6B9080] p-6 justify-center space-x-52 items-center '> 
@@ -12,7 +15,7 @@ const Home = () => {
         <a href="#aboutus" className=' hover:text-white'>About Us</a>
         <a href="#whatwedo" className=' hover:text-white'>What We Do</a>   
         <a href="#services" className=' hover:text-white'> Services</a>
-        <a href="" className='button px-4 py-2 bg-white rounded-full font-bold hover:-translate-y-1 hover:scale-110 hover:bg-blue-950 hover:text-white duration-300'>Reach Us</a>
+        <a href="" onClick={reachus} className='button px-4 py-2 bg-white rounded-full font-bold hover:-translate-y-1 hover:scale-110 hover:bg-blue-950 hover:text-white duration-300'>Reach Us</a>
         
       </div>
      </nav>

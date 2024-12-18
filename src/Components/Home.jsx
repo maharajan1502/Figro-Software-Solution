@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
                     
                 <div className='px-3 py-1 bg-[#bcd8d4] items-center justify-center text-center flex space-x-3'>
-                <img src="/https://res.cloudinary.com/dalwkmtmp/image/upload/v1734431309/digital-marketing_tgccno.png" height='40px' width='40px' alt="nothing" />
+                <img src="https://res.cloudinary.com/dalwkmtmp/image/upload/v1734431309/digital-marketing_tgccno.png" height='40px' width='40px' alt="nothing" />
                 <p >Digital Marketing</p>
                 </div>
                 

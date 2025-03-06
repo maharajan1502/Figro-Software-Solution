@@ -65,7 +65,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden absolute top-16 left-0 w-full bg-[#6B9080] p-4 transition-transform duration-300 ease-in-out ${
+        className={`lg:hidden absolute top-16 left-0 w-full bg-[#edbb99] p-4 transition-transform duration-300 ease-in-out ${
           isOpen ? "block" : "hidden"
         }`}
       >

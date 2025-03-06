@@ -23,11 +23,12 @@ const About = () => {
 
         {/* Right Side - Image */}
         <div className="w-full md:w-auto flex justify-center md:justify-end mt-6 md:mt-0">
-          <img
-            src="https://res.cloudinary.com/dalwkmtmp/image/upload/v1741240845/IMG-20250305-WA0007_1_cmr6am.jpg"
-            alt="About Us"
-            className="max-w-full md:w-[500px] h-auto"
-          />
+        <img
+          src="https://res.cloudinary.com/dalwkmtmp/image/upload/v1741240845/IMG-20250305-WA0007_1_cmr6am.jpg"
+          alt="About Us"
+          className="max-w-full md:w-[400px] h-auto mt-6"
+        />
+
         </div>
       </div>
 

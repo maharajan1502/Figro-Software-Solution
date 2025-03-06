@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#ffffff] p-3 shadow-md">
+    <nav className="bg-[#ffffff] p-3 shadow-md relative">
       <div className="container mx-auto flex justify-between items-center px-1">
         
         {/* Logo */}
@@ -19,7 +19,7 @@ const Navbar = () => {
               alt="Logo"
               className="w-24"
             />
-            </div>
+          </div>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -66,19 +66,19 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={`lg:hidden absolute top-16 left-0 w-full bg-[#6B9080] p-4 transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+          isOpen ? "block" : "hidden"
         }`}
       >
-        <a href="#aboutus" className="block text-white py-2">
+        <a href="#aboutus" className="block text-white py-2" onClick={toggleMenu}>
           About Us
         </a>
-        <a href="#whatwedo" className="block text-white py-2">
+        <a href="#whatwedo" className="block text-white py-2" onClick={toggleMenu}>
           What We Do
         </a>
-        <a href="#services" className="block text-white py-2">
+        <a href="#services" className="block text-white py-2" onClick={toggleMenu}>
           Services
         </a>
-        <a href="#contact" className="block text-white py-2">
+        <a href="#contact" className="block text-white py-2" onClick={toggleMenu}>
           Reach Us
         </a>
       </div>

@@ -14,8 +14,8 @@ const App = () => {
       <About/>
       <Rate/>
       <Services/>
-      <Form/>
       <Join/>
+      <Form/>
       <Footer/>
     </div>
   )

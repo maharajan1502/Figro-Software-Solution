@@ -7,9 +7,8 @@ const Join = () => {
       <h1 className='font-extrabold text-5xl'>join our team</h1>
      <p className='text-xl pt-2 font-mono' >realize your potential</p>
      </div>
-     <button className='font-thin text-2xl border-2 border-black py-1 px-5 bg-slate-200 hover:bg-black hover:text-white hover:font-bold rounded-full'>Explore RM Carrers</button>
-     <div className='bg-slate-600 h-1'>
-      </div>
+     <button className='font-thin text-2xl border-2 border-black py-1 px-5 bg-slate-200 hover:bg-black hover:text-white hover:font-bold rounded-full'>Explore Figro Carrers</button>
+     <div className='bg-slate-600 h-1'></div>
      <div className='text-start px-11 space-y-2'>
         <p className='font-light text-2xl '>Social</p>
         <h1 className=' fon-bold text-3xl'>Follow us for the latest updates</h1>

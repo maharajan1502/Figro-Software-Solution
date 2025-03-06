@@ -2,7 +2,7 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div id='services' className=' p-10 '  >
+    <div id='services' className=' p-10 '>
         <div>
             <p className='button font-bold text-2xl text-center text-blue-950 w-auto ' >SERVICES</p>
         </div>

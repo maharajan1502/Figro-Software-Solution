@@ -8,7 +8,7 @@ import Join from './Components/Join'
 
 const App = () => {
   return (
-    <div>
+    <div className='mainBody'>
       <Home/>
       <About/>
       <Rate/>

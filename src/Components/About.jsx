@@ -16,7 +16,7 @@ const About = () => {
          end-to-end solutions that seamlessly integrate front-end and back-end technologies.</p>
       </div>
       <div className='text-xl font-semibold '>
-      <img src="https://res.cloudinary.com/dalwkmtmp/image/upload/v1734431246/Pasted_image_jqlnuy.png" height-='300px' width='300px' alt="nothing" />
+      <img src="/src/assets/logo/WhatsApp Image 2025-03-05 at 12.34.08 PM.jpeg" style={{ width: '500px', paddingTop: '80px' }} />
       </div>
       <hr/>
     </div>

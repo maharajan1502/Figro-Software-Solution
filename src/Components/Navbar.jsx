@@ -8,12 +8,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#6B9080] p-4">
+    <nav className="bg-[#ffffff] p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-black text-2xl font-bold">
         <div className='flex space-x-3 items-center'>
-        <img src="https://res.cloudinary.com/dalwkmtmp/image/upload/v1734431246/Pasted_image_jqlnuy.png" height-='25px' width='70px' alt="nothing" />
-        <h1 className='font-bold text-2xl'>Figro Software Solutions</h1>
+        {/* <img src="https://res.cloudinary.com/dalwkmtmp/image/upload/v1734431246/Pasted_image_jqlnuy.png" height-='25px' width='70px' alt="nothing" /> */}
+        <img src="/src/assets/logo/WhatsApp Image 2025-03-05 at 12.34.08 PM.jpeg" style={{ width: '100px' }} />
+        {/* <h1 className='font-bold text-2xl'>Figro Software Solutions</h1> */}
       </div>
         </div>
 

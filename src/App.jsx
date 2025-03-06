@@ -5,6 +5,7 @@ import Services from './Components/Services'
 import Footer from './Components/Footer'
 import Rate from './Components/Rate'
 import Join from './Components/Join'
+import Form from './Components/Form'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <About/>
       <Rate/>
       <Services/>
+      <Form/>
       <Join/>
       <Footer/>
     </div>

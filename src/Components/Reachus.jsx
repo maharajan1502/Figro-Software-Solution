@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const Reachus = () => {
+    const [isOpen, setIsOpen] = useState(true); // Controls the visibility of the popup
+
+    const closePopup = () => {
+        setIsOpen(false);
+    };
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+        alert("Form submitted successfully!");
+        closePopup();
+    };
+
+    if (!isOpen) return null; // Hide the popup when isOpen is false
+
     return (
-        <div className="popup-overlay" id="popupOverlay" style={{ display: 'flex' }}>
+        <div className="popup-overlay" style={{ display: 'flex' }}>
             <div className="popup-form">
                 <span className="close-btn" onClick={closePopup}>&times;</span>
                 <h2>Contact Form</h2>
-                <form id="contactForm" onSubmit={handleFormSubmit}>
+                <form onSubmit={handleFormSubmit}>
                     <label htmlFor="name">Name</label>
                     <input type="text" id="name" name="name" required /><br />
 

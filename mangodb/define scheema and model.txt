@@ -1,0 +1,71 @@
+define scheema and model
+========================
+
+const mongoose = require('mongoose');
+const uri = "mongodb+srv://<username>:<password>@cluster0.mongodb.net/test?retryWrites=true&w=majority";
+
+// Connect to MongoDB
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Mongoose connected'))
+  .catch(err => console.log(err));
+
+const productSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  image: { type: String, required: true },
+  price: { type: Number, required: true },
+  stock: { type: Number, required: true, default: 0 }
+});
+
+const Product = mongoose.model('Product', productSchema);
+------------------------------------------------------------------------------
+
+cruf operation
+==============\
+
+// Create
+async function createProduct() {
+  const product = new Product({
+    name: 'Sample Product',
+    image: 'http://example.com/image.png',
+    price: 19.99,
+    stock: 50
+  });
+
+  await product.save();
+  console.log('Product created:', product);
+}
+
+// Read
+async function readProducts() {
+  const products = await Product.find();
+  console.log('Products:', products);
+}
+
+// Update
+async function updateProduct(productId) {
+  const result = await Product.findByIdAndUpdate(productId, { stock: 100 }, { new: true });
+  console.log('Product updated:', result);
+}
+
+// Delete
+async function deleteProduct(productId) {
+  const result = await Product.findByIdAndDelete(productId);
+  console.log('Product deleted:', result);
+}
+
+
+// Call the functions to perform operations
+createProduct();
+readProducts();
+updateProduct("<productId>");
+deleteProduct("<productId>");
+
+
+Connect to MongoDB using either the MongoDB native driver or Mongoose.
+Define your schema (if using Mongoose).
+Perform CRUD operations:
+Create: insertOne() (MongoDB) or .save() (Mongoose).
+Read: find() (both MongoDB and Mongoose).
+Update: updateOne() or findByIdAndUpdate() (Mongoose).
+Delete: deleteOne() or findByIdAndDelete() (Mongoose).
+

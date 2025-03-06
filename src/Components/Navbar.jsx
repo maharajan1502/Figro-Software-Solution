@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="text-black text-2xl font-bold">
           <div className="flex space-x-3 items-center">
             <img
-              src="src/assets/logo/WhatsApp Image 2025-03-05 at 12.34.08 PM.jpeg"
+              src="https://res.cloudinary.com/dalwkmtmp/image/upload/v1741240845/IMG-20250305-WA0007_1_cmr6am.jpg"
               alt="Logo"
               className="w-24"
             />
